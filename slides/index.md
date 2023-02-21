@@ -86,6 +86,17 @@ Presented by Philippe Arteau
 
  - 
 
+---
+
+## Popup
+
+ - 
+
+---
+
+## Service worker
+
+ - 
 
 ---
 ![bg left:35%](images/wrench.jpg)
