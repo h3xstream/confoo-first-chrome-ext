@@ -171,6 +171,15 @@ chrome.tabs.sendMessage(tabId, {
 
 ---
 
+## 2. Content Script
+
+Script load in the context of the tab.
+
+ - It will have complete access to the DOM.
+ - Needs to use message or storage API to communication with the main service worker or the secondary pages.
+
+---
+
 ## 3. Context menu
 
 Context menu with option to extract the text selected.
