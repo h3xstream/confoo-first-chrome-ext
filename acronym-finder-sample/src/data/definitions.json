@@ -1297,5 +1297,11 @@
 {"acronym": "ZOI", "fullname": "Zero One Infinity", "definition": "Zero One Infinity"},
 {"acronym": "ZOPE", "fullname": "Zope", "definition": "Z Object Publishing Environment"},
 {"acronym": "ZMA", "fullname": "Zone Multicast Address", "definition": "Zone Multicast Address"},
+{"acronym": "SQL", "fullname": "Structured Query Language", "definition": "Structured Query Language"},
+{"acronym": "JWT", "fullname": "JSON Web Token", "definition": "JSON Web Token"},
+{"acronym": "BDD", "fullname": "Behavior-Driven Development", "definition": "Behavior-Driven Development"},
+{"acronym": "TDD", "fullname": "Test Driven Development", "definition": "Test Driven Development"},
+{"acronym": "PHP", "fullname": "PHP Hypertext Preprocessor", "definition": "PHP Hypertext Preprocessor"},
 {"acronym": "ZPL", "fullname": "ZPL (programming language)", "definition": "Z-level Programming Language"}
 ]
+

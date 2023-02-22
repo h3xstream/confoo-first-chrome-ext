@@ -11,7 +11,7 @@ const config = {
   devtool: 'cheap-source-map',
   entry: {
     background: path.join(__dirname, './src/background.js'),
-    settings:  path.join(__dirname, './src/settings.js'),
+    search:  path.join(__dirname, './src/search.js'),
     popup:  path.join(__dirname, './src/popup.js')
 
   },

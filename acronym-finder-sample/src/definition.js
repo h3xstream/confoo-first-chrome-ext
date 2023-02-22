@@ -28,13 +28,21 @@ class DefinitionUtil {
      * @returns 
      */
     getDefinition(acronym) {
-        if(acronym == undefined) return undefined;
-        return this.definitions[acronym]['definition'];
+        if(acronym && this.definitions[acronym]) {
+            return this.definitions[acronym]['definition'];
+        }
+        else {
+            return undefined;
+        }
     }
 
     getFullname(acronym) {
-        if(bugId == undefined) return undefined;
-        return this.definitions[bugId]['fullname'];
+        if(acronym && this.definitions[acronym]) {
+            return this.definitions[acronym]['fullname'];
+        }
+        else {
+            return undefined;
+        }
     }
 }
 

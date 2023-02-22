@@ -2,6 +2,8 @@ import Vue from 'vue';
 import popup from './popup.vue';
 const chromeInjector = require('./chromeInjector.js')
 
+const def = require('../src/definition.js');
+
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -14,8 +16,15 @@ chrome.tabs.query({active: true, currentWindow: true}).then(tabs => {
 
         vm.$children[0].initData(); //Clear
 
+        let definitionUtil = new def.DefinitionUtil();
+        definitionUtil.loadDefFile();
+
+
         for(let a of acronyms) {
-            vm.$children[0].addAcronym(a, "AAAA!!");
+
+            let definition = definitionUtil.getDefinition(a);
+
+            vm.$children[0].addAcronym(a, definition? definition: "Unknonw acronym");
         }
     });
 });
