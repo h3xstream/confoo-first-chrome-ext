@@ -28,7 +28,7 @@ Presented by Philippe Arteau
 # Agenda
 
  1. Why developed a Chrome extension?
- 2. Anatomy of Chrome extension
+ 2. Anatomy of a Chrome extension
     - `manifest.json`
     - Common components: popup, service worker, pages, context menu, ...
  3. Tooling
@@ -48,7 +48,7 @@ Presented by Philippe Arteau
 
  - A great way to extended an existing web applications
     - Code repository, mail client, timesheet, etc.
- - The browser are the main software used by most "office jobs"
+ - The browser is the main software used by most "office jobs"
 
 
 ---
@@ -173,10 +173,10 @@ chrome.tabs.sendMessage(tabId, {
 
 ## 2. Content Script
 
-Script load in the context of the tab.
+Script loaded in the **context of the tab**.
 
  - It will have complete access to the DOM.
- - Needs to use message or storage API to communication with the main service worker or the secondary pages.
+ - It needs to use message or storage API to communicate with the main service worker or the secondary pages.
 
 ---
 
@@ -186,10 +186,9 @@ Context menu with option to extract the text selected.
 
 ![](images/context_menu_demo.png)
 
-
 ---
 
-## 3. Context menu
+## 3. Context menu: Initialisation
 
 
 ![](images/context_menu.png)
@@ -226,7 +225,7 @@ Context menu with option to extract the text selected.
 
 **`popup.js` implementation**
 
-As an alternative to contentScript, you can inject a script on a tab.
+As an alternative to Content Script, you can inject a script too a tab.
 
 ![](images/executeScript.png)
 
@@ -254,16 +253,16 @@ Using a relative path from the popup will also work:
 ---
 ![bg left:35%](images/wrench.jpg)
 <!-- _class: lead -->
-# Build
+# Tooling
 
 ---
 
 ## Webpack
 
-> Resource bundler
+>  [..] bundle JavaScript files for usage in a browser.
 
-- Allow you to use powerful JavaScript library from NPM
-  - Parser, API, Data Utilities, Your own modules
+- Allow you to use powerful JavaScript libraries from NPM
+  - Parser, API, Data utilities, Your own modules
 - Allow you to use Bootstrap, SASS files, UI Framework
    - (Vue, React, ...)
 
